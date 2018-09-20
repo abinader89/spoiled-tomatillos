@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>Spoiled Tomatillos - Coders Unlimited</title>
+<meta name="viewport" content="width=device-width"/>
+    <meta name="google-signin-client_id" content="246872954668-epfd05oafbm2v0fhsiroqmp05e73rqf5.apps.googleusercontent.com"/>
+    <base href="/"/>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" media="all" href="css/star-rating.css">
+    <link href="krajee-svg/theme.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="js/imports/jquery-3.3.1.min.js"></script>
+    <script src="js/imports/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/imports/js.cookie.js"></script>
+    <script src="js/imports/star-rating.js"></script>
+    <script src="krajee-svg/theme.js"></script>
+    <link rel="stylesheet" href="css/app.css"/>
+    <script src="js/search.js"></script>
+    <script src="js/movie-modal.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/api.js" async defer></script>
+    <script>
+        $(function(){
+          $("#modal-content").load("movie-modal.html");
+        });
+    </script>
+</head>
+<body>
+<div class="header" id="navdiv"></div>
+<div class="container">
+    <div class="jumbotron">
+        <h1 style="color:000000">Search for a Movie</h1>
+        <div class="search-bar">
+            <i class="icon fa fa-search" style="color:#343A40"></i>
+            <input class="input-text" type="text" id="moviesearch" placeholder="Search by title...">
+        </div>
+        <button class="btn btn-info btn-lg btnpadding" onclick="searchByTitle()" >Search</button>
+        <div id="modal-content"></div>
+    </div>
+    <div class="container feed" id="feed"></div>
+</div>
+</body>
+</html>
